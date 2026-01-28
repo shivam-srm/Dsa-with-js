@@ -10,8 +10,9 @@ a = sum - a ;
 b = sum - 20;
 console.log (a , b);
 // 2nd method
-let c = 40
-let d = 50
+let c = 40;
+let d = 50;
 
 [ c , d ] = [  d , c ];
+
 console.log(c,d)

@@ -85,13 +85,25 @@
 
 // Count digits in a number
 
-let num = 4567
-let count = 0 
-while (num >0 ){
-    num = Math.floor(num/10)
-    count ++
-}
-console.log(count)
+// let num = 4567
+// let count = 0 
+// while (num >0 ){
+//     num = Math.floor(num/10)
+//     count ++
+// }
+// console.log(count)
 // Check number divisible by 5 and 11
+let num = 55;
+
+if (num % 5 === 0 && num % 11 === 0) {
+    console.log("Divisible by both 5 and 11");
+} else {
+    console.log("Not divisible by both 5 and 11");
+}
+
 
 // Convert Celsius to Fahrenheit
+
+let c = 57
+let f = (c * 9/5) + 32
+console.log(f)

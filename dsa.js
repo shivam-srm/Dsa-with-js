@@ -44,37 +44,54 @@
 // }
 
 // Check even or odd
-let  a = 10;
-let b = 3;
-if (a%2 === 0) {
-    console.log("even")
-}
+// let  a = 10;
+// let b = 3;
+// if (a%2 === 0) {
+//     console.log("even")
+// }
 
-if (b%2===0){
-    console.log("odd")
-}
+// if (b%2===0){
+//     console.log("odd")
+// }
 
 // Check positive, negative, zero
-function abc (num){
-    if (num > 0) {
-        console.log("even")
-    }
-    if (num < 0){
-        console.log("neagtaive")
-    }
-    if ( num === 0 ){
-        console.log ("zero")
-    }
-}
-abc(-10);
-abc(-20);
-abc(0);
+// function abc (num){
+//     if (num > 0) {
+//         console.log("even")
+//     }
+//     if (num < 0){
+//         console.log("neagtaive")
+//     }
+//     if ( num === 0 ){
+//         console.log ("zero")
+//     }
+// }
+// abc(-10);
+// abc(-20);
+// abc(0);
+
 // Reverse a 2-digit number
+// let a  =  74 ;
+// let one = 74 % 10;
+// let tens = Math.floor(a/10);
+// let Reverse = (one*10) + tens
+// console.log (Reverse);
 
 // Sum of digits of a number
+// let b = 10;
+// let c = 20;
+// console.log(b+c);
+
 
 // Count digits in a number
 
+let num = 4567
+let count = 0 
+while (num >0 ){
+    num = Math.floor(num/10)
+    count ++
+}
+console.log(count)
 // Check number divisible by 5 and 11
 
 // Convert Celsius to Fahrenheit

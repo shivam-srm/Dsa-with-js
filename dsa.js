@@ -31,17 +31,17 @@
 // }
 // Find largest of three numbers
 
-let c = 10;
-let d = 20;
-let e = 30 ;
+// let c = 10;
+// let d = 20;
+// let e = 30 ;
 
-if (c > d && c > e) {
-    console.log(`${c} is largest`);
-} else if (d > e) {
-    console.log(`${d} is largest`);
-} else {
-    console.log(`${e} is largest`);
-}
+// if (c > d && c > e) {
+//     console.log(`${c} is largest`);
+// } else if (d > e) {
+//     console.log(`${d} is largest`);
+// } else {
+//     console.log(`${e} is largest`);
+// }
 
 // Check even or odd
 let  a = 10;
@@ -55,7 +55,20 @@ if (b%2===0){
 }
 
 // Check positive, negative, zero
-
+function abc (num){
+    if (num > 0) {
+        console.log("even")
+    }
+    if (num < 0){
+        console.log("neagtaive")
+    }
+    if ( num === 0 ){
+        console.log ("zero")
+    }
+}
+abc(-10);
+abc(-20);
+abc(0);
 // Reverse a 2-digit number
 
 // Sum of digits of a number

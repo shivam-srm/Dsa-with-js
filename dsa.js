@@ -1,4 +1,4 @@
-// // Swap two numbers without third variable
+// Swap two numbers without third variable
 // let a = 10
 // let b = 20 ;
 
@@ -9,7 +9,7 @@
 // a = sum - a ;
 // b = sum - 20;
 // console.log (a , b);
-// // 2nd method
+// 2nd method
 // let c = 40;
 // let d = 50;
 
@@ -93,17 +93,24 @@
 // }
 // console.log(count)
 // Check number divisible by 5 and 11
-let num = 55;
+// let num = 55;
 
-if (num % 5 === 0 && num % 11 === 0) {
-    console.log("Divisible by both 5 and 11");
-} else {
-    console.log("Not divisible by both 5 and 11");
-}
+// if (num % 5 === 0 && num % 11 === 0) {
+//     console.log("Divisible by both 5 and 11");
+// } else {
+//     console.log("Not divisible by both 5 and 11");
+// }
 
 
 // Convert Celsius to Fahrenheit
 
-let c = 57
-let f = (c * 9/5) + 32
-console.log(f)
+// let c = 57
+// let f = (c * 9/5) + 32
+// console.log(f)
+
+let prompt = require('prompt-sync')();
+
+let year = Number(prompt("enter a year "))
+if (year % 4===0 && year % 100 !=0 ) console.log("leap year")
+ else if (year%400==0) console.log("leap year")
+else console.log("no leap year")

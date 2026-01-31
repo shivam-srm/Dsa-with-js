@@ -108,9 +108,30 @@
 // let f = (c * 9/5) + 32
 // console.log(f)
 
-let prompt = require('prompt-sync')();
+// let prompt = require('prompt-sync')();
 
-let year = Number(prompt("enter a year "))
-if (year % 4===0 && year % 100 !=0 ) console.log("leap year")
- else if (year%400==0) console.log("leap year")
-else console.log("no leap year")
+// let year = Number(prompt("enter a year "))
+// if (year % 4===0 && year % 100 !=0 ) console.log("leap year")
+//  else if (year%400==0) console.log("leap year")
+// else console.log("no leap year")
+
+// dicount
+
+let prompt = require('prompt-sync')();
+let num = Number(prompt("Enter amount"))
+let payamount = 0;
+
+if (num>0 && num<=5000){
+    payamount = num;
+}
+else if (num>5000 && num<= 7000){
+    payamount = num - (5*num)/100;
+}
+else if (num>7000 && num<=9000){
+    payamount = num - (10*num)/100;
+}
+else {
+    payamount= num - (20*num)/100;
+}
+
+console.log(payamount)

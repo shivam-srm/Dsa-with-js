@@ -141,4 +141,5 @@
 // for(let i = 1; i<=n; i++) console.log(i)
 let prompt = require('prompt-sync')()
 let n = Number(prompt("enter a number"))
-for(let i= n; i >=1 ; i-- ) console.log (i);
+sum = 0;
+for(let i= n ; i<=n; i++ ) console.log (sum = n * (n + 1) / 2 );

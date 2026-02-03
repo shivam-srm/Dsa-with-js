@@ -141,5 +141,5 @@
 // for(let i = 1; i<=n; i++) console.log(i)
 let prompt = require('prompt-sync')()
 let n = Number(prompt("enter a number"))
-sum = 0;
-for(let i= n ; i<=n; i++ ) console.log (sum = n * (n + 1) / 2 );
+factorial = 1 ;
+for(let i= 1 ; i<=n; i++ ) console.log (factorial = factorial*i);

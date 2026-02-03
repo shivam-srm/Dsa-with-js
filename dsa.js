@@ -117,21 +117,28 @@
 
 // dicount
 
-let prompt = require('prompt-sync')();
-let num = Number(prompt("Enter amount"))
-let payamount = 0;
+// let prompt = require('prompt-sync')();
+// let num = Number(prompt("Enter amount"))
+// let payamount = 0;
 
-if (num>0 && num<=5000){
-    payamount = num;
-}
-else if (num>5000 && num<= 7000){
-    payamount = num - (5*num)/100;
-}
-else if (num>7000 && num<=9000){
-    payamount = num - (10*num)/100;
-}
-else {
-    payamount= num - (20*num)/100;
-}
+// if (num>0 && num<=5000){
+//     payamount = num;
+// }
+// else if (num>5000 && num<= 7000){
+//     payamount = num - (5*num)/100;
+// }
+// else if (num>7000 && num<=9000){
+//     payamount = num - (10*num)/100;
+// }
+// else {
+//     payamount= num - (20*num)/100;
+// }
 
-console.log(payamount)
+// console.log(payamount)
+
+// let prompt = require("prompt-sync")();
+// let n = Number(prompt("Enter a Number"))
+// for(let i = 1; i<=n; i++) console.log(i)
+let prompt = require('prompt-sync')()
+let n = Number(prompt("enter a number"))
+for(let i= n; i >=1 ; i-- ) console.log (i);

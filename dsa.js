@@ -140,9 +140,23 @@
 // let n = Number(prompt("Enter a Number"))
 // for(let i = 1; i<=n; i++) console.log(i)
 let prompt = require('prompt-sync')()
-let n = Number(prompt("enter a number"))
-for(let i= 1 ; i<=n; i++ ) {
-    if (n%i === 0){
-     console.log(i)
+let start = Number(prompt("enter a number"))
+let end = Number(prompt("enter a number"))
+if (start > end) console.log ([start,end] = [end,start])
+
+let sumeven = 0;
+let summodd = 0;
+
+for (let i = start ; i<=end ; i++){
+    if (i%2===0){
+        
+        sumeven += i;
+    }else{
+                
+                        summodd += i;
+
     }
+    
 }
+console.log(sumeven);
+    console.log(summodd);

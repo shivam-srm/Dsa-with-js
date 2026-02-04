@@ -172,16 +172,28 @@
 //     console.log()
 // } 
 
+// let prompt =  require('prompt-sync')();
+// let n = Number(prompt("enter a number"))
+// for (let i = 1 ; i<= n ; i++){
+//     for (let j = (n-1) ; j>=i  ; j--){
+//          process.stdout.write( " ")
+//     }
+//         for (let j =  1 ; j<=i ; j++){
+//             process.stdout.write("*" )
+//         }
+//         console.log()
+        
+//     }
+    
 let prompt =  require('prompt-sync')();
 let n = Number(prompt("enter a number"))
 for (let i = 1 ; i<= n ; i++){
-    for (let j = (n-1) ; j>=i  ; j--){
-         process.stdout.write( " ")
-    }
-        for (let j =  1 ; j<=i ; j++){
-            process.stdout.write("*" )
-        }
-        console.log()
-        
-    }
-    
+    for (let j = 1; j<=n; j++){
+      if ( i ==j || i + j == n + 1){
+         process.stdout.write("*" )
+      }
+      else
+         process.stdout.write(" ")
+      }
+    console.log();
+}

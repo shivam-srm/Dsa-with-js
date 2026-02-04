@@ -139,24 +139,33 @@
 // let prompt = require("prompt-sync")();
 // let n = Number(prompt("Enter a Number"))
 // for(let i = 1; i<=n; i++) console.log(i)
-let prompt = require('prompt-sync')()
-let start = Number(prompt("enter a number"))
-let end = Number(prompt("enter a number"))
-if (start > end) console.log ([start,end] = [end,start])
+// let prompt = require('prompt-sync')()
+// let start = Number(prompt("enter a number"))
+// let end = Number(prompt("enter a number"))
+// if (start > end) console.log ([start,end] = [end,start])
 
-let sumeven = 0;
-let summodd = 0;
+// let sumeven = 0;
+// let summodd = 0;
 
-for (let i = start ; i<=end ; i++){
-    if (i%2===0){
+// for (let i = start ; i<=end ; i++){
+//     if (i%2===0){
         
-        sumeven += i;
-    }else{
+//         sumeven += i;
+//     }else{
                 
-                        summodd += i;
+//                         summodd += i;
 
-    }
+//     }
     
+// }
+// console.log(sumeven);
+//     console.log(summodd);
+
+let prompt =  require('prompt-sync')();
+let n = Number(prompt("enter a number"))
+for(let i = 1 ; i<=n ; i++){
+    for(let j = 1 ; j<=i ; j++){
+        process.stdout.write("* ")
+    }
+    console.log()
 }
-console.log(sumeven);
-    console.log(summodd);
